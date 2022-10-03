@@ -220,11 +220,11 @@ textarea {
     background-color: rgba(15, 25, 20, 0.1);
 }
 
-.tzeets #message {
+.tzeets .message {
     color: rgb(15, 20, 25);
 }
 
-.tzeets #name_date {
+.tzeets .name_date {
     color: rgb(83, 100, 103);
 }
 
