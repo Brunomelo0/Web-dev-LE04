@@ -25,3 +25,30 @@ function habilitar() {
         sendbutton.disabled = true
     }
 }
+const textareamodal = document.getElementById('enviotzeetmodal')
+const contadormodal = document.getElementById('contadormodal')
+const sendbuttonmodal = document.getElementById('sendbuttonmodal')
+function contmodal(event) {
+    if (event.keyCode >= 48 && event.keyCode <= 90) {
+        contadormodal.innerHTML = textareamodal.value.length + 1
+    } else if (event.keyCode == 8) {
+        if (textareamodal.value.length < 1)
+            contadormodal.innerHTML = 0
+        if (contadormodal.innerHTML > 0)
+            contadormodal.innerHTML -= 1
+    }
+    if (contadormodal.innerHTML > 144) {
+        contadormodal.style.color = "rgb(255, 0, 0)"
+    } else if (contadormodal.innerHTML >= 104 && contadormodal.innerHTML <= 144) {
+        contadormodal.style.color = "rgb(255, 200, 0)"
+    } else {
+        contadormodal.style.color = "black"
+    }
+}
+function habilitarmodal() {
+    if (parseInt(contadormodal.innerHTML) > 0) {
+        sendbuttonmodal.disabled = false
+    } else {
+        sendbuttonmodal.disabled = true
+    }
+}
