@@ -34,11 +34,6 @@ a {
     width: 64px;
 }
 
-.foto h3 {
-    font-size: 25px;
-    font-weight: 500;
-}
-
 textarea {
     outline: none;
     resize: none;
@@ -75,7 +70,6 @@ textarea {
 .navegacao button {
     border-radius: 20px;
     font-size: 17px;
-    height: 30px;
     width: 70%;
     text-shadow: none;
 }
@@ -149,6 +143,10 @@ textarea {
 
 .bio li a {
     color: rgb(83, 100, 103);
+}
+
+.bio li a:hover {
+    text-decoration: underline;
 }
 
 .estatisticas {
@@ -239,6 +237,10 @@ textarea {
     background-color: rgb(239, 243, 244);
     border-radius: 3px;
 
+}
+
+.titlesugestoes h3 {
+    text-align: center;
 }
 
 .sugestoes h3 {
