@@ -76,7 +76,7 @@ textarea {
     border-radius: 20px;
     font-size: 17px;
     height: 30px;
-    width: 150px;
+    width: 70%;
     text-shadow: none;
 }
 
@@ -91,10 +91,11 @@ textarea {
 .navegacao li {
     list-style-type: none;
     padding: 7px;
+    width: 100%;
 }
 
 .navegacao li a {
-    font-size: 17px;
+    width: 100%;
 }
 
 .navegacao li a:hover {
@@ -265,14 +266,18 @@ textarea {
     padding-bottom: 7px;
 }
 
-.perfil a {
-    font-size: 15px;
-}
-
 .perfil button {
-    width: 60px;
+    width: 30%;
     height: 30px;
     font-size: 13px;
+}
+
+.perfil a {
+    width: 40%;
+}
+
+.perfil svg {
+    width: 20%;
 }
 
 .sugestoes #mostrar_mais {
